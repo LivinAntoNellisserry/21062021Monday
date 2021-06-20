@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -24,7 +25,7 @@ public class Main {
 		List<String> list = new ArrayList<String>(
 				List.of(
 						"d1","f4","a3","b7","b2","x4","l2","f3","f1","a1","c2","b2","a4","b","a1"));
-		System.out.println(list);
+		System.out.println("Array List: " + list);
 		
 		
 		
@@ -33,13 +34,13 @@ public class Main {
 				.stream()
 				.filter(x -> x.startsWith("a"))
 				.collect(Collectors.toList());
-		System.out.println(filteredList);
+		System.out.println("Filtered List: " + filteredList);
 		
 		
 		
 		//3) Find the unique elements from filtered result using Hashset
 		Set<String> uniqueFromFiltered = new HashSet<String>(filteredList);
-		System.out.println(uniqueFromFiltered);
+		System.out.println("Unique from Filtered List: " + uniqueFromFiltered);
 		
 		
 		//4) Add the unique elements from Hashset to Hashmap . ( the numeric part as key . say key of a1 is 1 )
@@ -51,7 +52,7 @@ public class Main {
 		
 		
 		//5) Print all elements in Hashmap
-		System.out.println(uniqueHashMap);
+		System.out.println("The HashMap: " + uniqueHashMap);
 
 	}
 
